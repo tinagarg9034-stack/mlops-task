@@ -1,0 +1,135 @@
+2026-08-04 17:27:52,571 - INFO - Job started
+2026-08-04 17:27:52,575 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:27:52,620 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 98, in main
+    raise ValueError("Required column 'close' is missing")
+ValueError: Required column 'close' is missing
+2026-08-04 17:27:52,622 - INFO - Job ended with status: error
+2026-08-04 17:35:10,240 - INFO - Job started
+2026-08-04 17:35:10,243 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:35:10,316 - INFO - Rows loaded: 10001
+2026-08-04 17:35:10,316 - INFO - Calculating rolling mean
+2026-08-04 17:35:10,324 - INFO - Generating signals
+2026-08-04 17:35:10,330 - INFO - Metrics summary: {'version': 'v1', 'rows_processed': 10001, 'metric': 'signal_rate', 'value': nan, 'latency_ms': 88, 'seed': 42, 'status': 'success'}
+2026-08-04 17:35:10,330 - INFO - Job ended with status: success
+2026-08-04 17:38:41,847 - INFO - Job started
+2026-08-04 17:38:41,859 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:38:41,957 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 122, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:38:41,959 - INFO - Job ended with status: error
+2026-08-04 17:38:56,084 - INFO - Job started
+2026-08-04 17:38:56,085 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:38:56,131 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 122, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:38:56,132 - INFO - Job ended with status: error
+2026-08-04 17:41:54,106 - INFO - Job started
+2026-08-04 17:41:54,108 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:41:54,208 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 124, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:41:54,210 - INFO - Job ended with status: error
+2026-08-04 17:44:28,968 - INFO - Job started
+2026-08-04 17:44:28,974 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:44:29,157 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 124, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:44:29,161 - INFO - Job ended with status: error
+2026-08-04 17:45:31,017 - INFO - Job started
+2026-08-04 17:45:31,020 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:45:31,132 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 124, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:45:31,133 - INFO - Job ended with status: error
+2026-08-04 17:50:02,233 - INFO - Job started
+2026-08-04 17:50:02,235 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:50:02,290 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 118, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:50:02,291 - INFO - Job ended with status: error
+2026-08-04 17:50:23,845 - INFO - Job started
+2026-08-04 17:50:23,846 - INFO - Config loaded and validated: seed=42, window=5, version=v1
+2026-08-04 17:50:23,877 - ERROR - Job failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 118, in main
+    raise ValueError("Column 'close' contains no valid numeric values")
+ValueError: Column 'close' contains no valid numeric values
+2026-08-04 17:50:23,878 - INFO - Job ended with status: error
+2026-08-04 17:56:10,359 - INFO - Starting MLOps task
+2026-08-04 17:56:10,359 - INFO - Input: data.csv
+2026-08-04 17:56:10,360 - INFO - Config: config.yaml
+2026-08-04 17:56:10,361 - INFO - Rolling window: 10
+2026-08-04 17:56:10,362 - INFO - Signal threshold: 0.001
+2026-08-04 17:56:10,400 - INFO - CSV loaded with columns: ['timestamp,open,high,low,close,volume_btc,volume_usd']
+2026-08-04 17:56:10,401 - ERROR - Task failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 249, in main
+    df = validate_data(df)
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 81, in validate_data
+    raise ValueError(
+ValueError: Required columns are missing: timestamp, open, high, low, close, volume_btc, volume_usd
+2026-08-04 17:56:18,492 - INFO - Starting MLOps task
+2026-08-04 17:56:18,493 - INFO - Input: data.csv
+2026-08-04 17:56:18,493 - INFO - Config: config.yaml
+2026-08-04 17:56:18,494 - INFO - Rolling window: 10
+2026-08-04 17:56:18,494 - INFO - Signal threshold: 0.001
+2026-08-04 17:56:18,524 - INFO - CSV loaded with columns: ['timestamp,open,high,low,close,volume_btc,volume_usd']
+2026-08-04 17:56:18,524 - ERROR - Task failed
+Traceback (most recent call last):
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 249, in main
+    df = validate_data(df)
+         ^^^^^^^^^^^^^^^^^
+  File "C:\Users\DELL\OneDrive\Desktop\mlops-task\run.py", line 81, in validate_data
+    raise ValueError(
+ValueError: Required columns are missing: timestamp, open, high, low, close, volume_btc, volume_usd
+2026-08-04 17:58:47,298 - INFO - Starting MLOps task
+2026-08-04 17:58:47,299 - INFO - Input: data.csv
+2026-08-04 17:58:47,299 - INFO - Config: config.yaml
+2026-08-04 17:58:47,301 - INFO - Rolling window: 10
+2026-08-04 17:58:47,302 - INFO - Signal threshold: 0.001
+2026-08-04 17:58:47,498 - INFO - CSV loaded with columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-08-04 17:58:47,569 - INFO - Rows loaded: 10000
+2026-08-04 17:58:47,569 - INFO - Calculating rolling mean
+2026-08-04 17:58:47,596 - INFO - Task completed successfully
+2026-08-04 18:03:17,452 - INFO - Starting pipeline
+2026-08-04 18:03:17,453 - INFO - Input file: data.csv
+2026-08-04 18:03:17,453 - INFO - Config file: config.yaml
+2026-08-04 18:03:17,455 - INFO - Rolling window: 18
+2026-08-04 18:03:17,455 - INFO - Loading data
+2026-08-04 18:03:17,555 - INFO - Data loaded with columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-08-04 18:03:17,592 - INFO - Rows processed: 10000
+2026-08-04 18:03:17,593 - INFO - Calculating signal rate
+2026-08-04 18:03:17,599 - INFO - Pipeline completed successfully
+2026-08-04 18:03:26,110 - INFO - Starting pipeline
+2026-08-04 18:03:26,110 - INFO - Input file: data.csv
+2026-08-04 18:03:26,110 - INFO - Config file: config.yaml
+2026-08-04 18:03:26,112 - INFO - Rolling window: 18
+2026-08-04 18:03:26,112 - INFO - Loading data
+2026-08-04 18:03:26,199 - INFO - Data loaded with columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-08-04 18:03:26,240 - INFO - Rows processed: 10000
+2026-08-04 18:03:26,240 - INFO - Calculating signal rate
+2026-08-04 18:03:26,246 - INFO - Pipeline completed successfully
+2026-08-04 18:32:11,580 - INFO - Starting pipeline
+2026-08-04 18:32:11,580 - INFO - Input file: data.csv
+2026-08-04 18:32:11,581 - INFO - Config file: config.yaml
+2026-08-04 18:32:11,582 - INFO - Rolling window: 18
+2026-08-04 18:32:11,582 - INFO - Loading data
+2026-08-04 18:32:11,643 - INFO - Data loaded with columns: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-08-04 18:32:11,674 - INFO - Rows processed: 10000
+2026-08-04 18:32:11,675 - INFO - Calculating signal rate
+2026-08-04 18:32:11,683 - INFO - Pipeline completed successfully
